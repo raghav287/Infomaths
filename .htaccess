@@ -1,0 +1,37 @@
+RewriteEngine On
+
+# 1. Clean URL for Course Batches
+# Example: domain.com/course/adwintage -> course-details.php?slug=adwintage
+RewriteRule ^course/([a-zA-Z0-9-]+)$ course-details.php?slug=$1 [L,QSA]
+
+# 2. Clean URL for Exams
+# Example: domain.com/exam/nimcet -> exam-details.php?exam=nimcet (renamed param to match your code)
+RewriteRule ^exam/([a-zA-Z0-9-]+)$ exam-details.php?exam=$1 [L,QSA]
+
+# 3. Clean URL for Papers (University Results)
+# Example: domain.com/papers/delhi-university -> papers.php?slug=delhi-university
+RewriteRule ^papers/([a-zA-Z0-9-]+)$ papers.php?slug=$1 [L,QSA]
+
+# 4. Clean URL for Bank PO Courses
+# Example: domain.com/bank-po-course/sbi-po -> bank-po-course-details.php?slug=sbi-po
+RewriteRule ^bank-po-course/([a-zA-Z0-9-]+)$ bank-po-course-details.php?slug=$1 [L,QSA]
+
+# 5. Clean URL for Bank PO Exams
+# Example: domain.com/bank-po-exam/sbi-po -> bank-po-exam-details.php?slug=sbi-po
+RewriteRule ^bank-po-exam/([a-zA-Z0-9-]+)$ bank-po-exam-details.php?slug=$1 [L,QSA]
+
+# 6. Clean URL for IIT JAM Exams
+# Example: domain.com/iit-jam-exam/tifr -> iit-jam-exam-details.php?slug=tifr
+RewriteRule ^iit-jam-exam/([a-zA-Z0-9-]+)$ iit-jam-exam-details.php?slug=$1 [L,QSA]
+
+# 6. Clean URL for Bank PO Notices
+# Example: domain.com/notice/some-notice -> notice-details.php?slug=some-notice
+RewriteRule ^notice/([a-zA-Z0-9-]+)$ notice-details.php?slug=$1 [L,QSA]
+
+# 7. Clean URL for Bank PO Jobs
+# Example: domain.com/job/some-job -> job-details.php?slug=some-job
+RewriteRule ^job/([a-zA-Z0-9-]+)$ job-details.php?slug=$1 [L,QSA]
+
+# Optional: Force HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
