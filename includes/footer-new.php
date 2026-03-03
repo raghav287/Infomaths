@@ -8,8 +8,10 @@
                         <img src="/assets/img/infomath-white-logo.png" class="img-fluid mb-4" alt="Info Maths Logo"
                             style="width: 248px" />
                         <p class="m-0">
-                            Info Maths is a premier coaching institute dedicated to providing competitive exam
-                            preparation.
+                            Infomaths – Where Concepts Become Confidence.
+                            Premier coaching for competitive exams with a legacy of success.
+                            <br>
+                            Trusted by Students Since 1999.
                         </p>
                         <!-- <p class="m-0 footercontact">
                             <br />Contact: <a href="tel:+919872124534" target="_blank"
