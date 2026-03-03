@@ -3,8 +3,8 @@
 // production database configuration
 $host = 'localhost';
 $dbname = 'u586615155_infomaths';
-$username = 'u586615155_infomaths';
-$password = '5txy0HB>uQ!';
+$username = 'root';
+$password = '';
 
 // Localhost database configuration
 // $host = 'localhost';
