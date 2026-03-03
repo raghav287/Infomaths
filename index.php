@@ -2398,7 +2398,7 @@ try {
                      <div class="td_post td_style_1 h-100">
                          <img src="assets/img/home_1/post_4.jpg" class="img-fluid">
                          <div class="td_post_info">
-                             <h2 class="td_post_title td_fs_24">Internship/Skill</h2>
+                             <h2 class="td_post_title td_fs_24">Internship/Skill Training</h2>
                              <p class="td_post_subtitle">Discover how online platforms help.</p>
                              <a href="#" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium mt-3">
                                  <span class="td_btn_in td_accent_color">
@@ -4745,8 +4745,10 @@ try {
                              <img src="assets/img/infomath-white-logo.png" class="img-fluid mb-4" alt="Info Maths Logo"
                                  style="width: 248px" />
                              <p class="m-0">
-                                 Info Maths is a premier coaching institute dedicated to providing competitive exam
-                                 preparation.
+                                 Infomaths – Where Concepts Become Confidence.
+                                 Premier coaching for competitive exams with a legacy of success.
+                                 <br>
+                                 Trusted by Students Since 1999.
                              </p>
                              <!-- <p class="m-0 footercontact">
                                 <br />Contact: <a href="tel:+919872124534" target="_blank"
