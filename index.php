@@ -1619,6 +1619,47 @@ try {
              font-size: 12px;
          }
      }
+
+     /* SECTION SPACING */
+     /* .result-img {
+         width: 100%;
+         height: 444px; */
+     /* Reduced height */
+     /* object-fit: cover;
+         object-position: center;
+     } */
+
+     /* Tablet */
+     /* @media (max-width: 991px) {
+         .result-img {
+             height: 240px;
+         }
+     } */
+
+     /* Mobile */
+     /* @media (max-width: 576px) {
+         .result-img {
+             height: 180px;
+         }
+     } */
+
+     .result-img {
+         width: 100%;
+         aspect-ratio: 3 / 1;
+         /* Keeps same slider proportion */
+         object-fit: cover;
+         object-position: center;
+         display: block;
+     }
+
+     /* Make sure slider doesn't force height */
+     .td_slider_container,
+     .td_slider_wrapper,
+     .td_slide {
+         height: auto !important;
+     }
+
+     /* Make slide take full width */
      </style>
  </head>
 
@@ -2574,26 +2615,25 @@ try {
 
 
      <!-- Start Our Results Section -->
-
-     <!-- End Our Results Section -->
-
-
-     <!-- Start Section -->
      <section class="td_gray_bg_6">
          <div class="td_height_60 td_height_lg_60"></div>
          <div class="container">
              <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s"
                  data-wow-delay="0.2s">
-                 <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase">
+                 <p class="td_section_subtitle_up text-uppercase">
                      Our Results
                  </p>
                  <h2 class="td_section_title td_fs_48 mb-0">
-                     25 Years+ of Excellence: <br> A Legacy of Success in Entrance Exam Coaching
+                     25 Years+ of Excellence: <br class="d-none d-md-block">
+                     A Legacy of Success in Entrance Exam Coaching
                  </h2>
              </div>
+
              <div class="td_height_50 td_height_lg_50"></div>
 
-             <div class="row td_gap_y_50"> <?php
+             <div class="row td_gap_y_50">
+
+                 <?php
             $sections = [
                 ['slug' => 'mca_results', 'title' => 'MCA Results'],
                 ['slug' => 'pu_results', 'title' => 'PU Results'],
@@ -2605,39 +2645,45 @@ try {
             ?>
                  <div class="col-12 wow fadeIn" data-wow-duration="1s">
                      <div class="mb-4">
+
                          <h4 class="mb-3"
-                             style="color: #2c3e50; font-weight: 700; font-size: 1.5rem; border-left: 5px solid #ff4d01; padding-left: 15px;">
+                             style="color: #2c3e50; font-weight: 700; font-size: 24px; border-left: 5px solid #ff4d01; padding-left: 15px;">
                              <?php echo $sec['title']; ?>
                          </h4>
+
                          <div class="td_slider td_style_1">
                              <div class="td_slider_container" data-autoplay="1" data-loop="1" data-speed="800"
                                  data-slides-per-view="1">
-                                 <div class="td_slider_wrapper">
-                                     <?php
-                                try {
-                                    $stmt = $pdo->prepare("SELECT * FROM section_images WHERE section_name = ? ORDER BY display_order");
-                                    $stmt->execute([$sec['slug']]);
-                                    $images = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-                                    if (!empty($images)) {
-                                        foreach ($images as $image) {
-                                            echo '<div class="td_slide">
-                                                    <div class="td_radius_10 overflow-hidden shadow-sm">
+                                 <div class="td_slider_wrapper">
+
+                                     <?php
+                                    try {
+                                        $stmt = $pdo->prepare("SELECT * FROM section_images WHERE section_name = ? ORDER BY display_order");
+                                        $stmt->execute([$sec['slug']]);
+                                        $images = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                                        if (!empty($images)) {
+                                            foreach ($images as $image) {
+                                                echo '<div class="td_slide">
                                                         <img src="' . htmlspecialchars($image['image_path']) . '" 
                                                              alt="' . htmlspecialchars($image['alt_text']) . '" 
-                                                             class="w-100" 
-                                                             style="height: 444px; object-fit: cover; object-position: center;" />
-                                                    </div>
-                                                </div>';
+                                                             class="result-img" />
+                                                      </div>';
+                                            }
+                                        } else {
+                                            echo '<div class="td_slide">
+                                                    <img src="assets/img/placeholder.jpg" 
+                                                         class="result-img" />
+                                                  </div>';
                                         }
-                                    } else {
-                                        echo '<div class="td_slide"><img src="assets/img/placeholder.jpg" class="w-100 td_radius_10" style="height: 444px; object-fit: cover;" /></div>';
-                                    }
-                                } catch (PDOException $e) { /* Error */ }
-                                ?>
+                                    } catch (PDOException $e) { }
+                                    ?>
+
                                  </div>
                              </div>
                          </div>
+
                      </div>
                  </div>
                  <?php endforeach; ?>
@@ -2646,6 +2692,11 @@ try {
          </div>
          <div class="td_height_60 td_height_lg_80"></div>
      </section>
+     <!-- End Our Results Section -->
+
+
+     <!-- Start Section -->
+
      <!-- End Section -->
 
 

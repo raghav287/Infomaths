@@ -1,4 +1,4 @@
-<footer class="td_footer td_style_1" style="background-color:black;">
+<footer class="td_footer td_style_1" style="background-color:#09226c;">
     <div class="container-fluid">
         <div class="td_footer_row">
             <!-- Company Info Section -->
