@@ -186,8 +186,8 @@ try {
     <div class="page">
         <div class="page-main">
 
-           <?php include 'assets/header.php'; ?>
-           <?php include 'assets/sidebar.php'; ?>
+            <?php include 'assets/header.php'; ?>
+            <?php include 'assets/sidebar.php'; ?>
 
             <!--app-content open-->
             <div class="main-content app-content mt-0">
@@ -218,31 +218,35 @@ try {
                                     <div class="card-body">
 
                                         <?php if (!empty($error_message)): ?>
-                                            <div class="alert alert-danger" role="alert">
-                                                <?php echo $error_message; ?>
-                                            </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            <?php echo $error_message; ?>
+                                        </div>
                                         <?php endif; ?>
 
                                         <?php if (!empty($success_message)): ?>
-                                            <div class="alert alert-success" role="alert">
-                                                <?php echo $success_message; ?>
-                                            </div>
+                                        <div class="alert alert-success" role="alert">
+                                            <?php echo $success_message; ?>
+                                        </div>
                                         <?php endif; ?>
 
                                         <form method="post" enctype="multipart/form-data" class="mb-4">
                                             <div class="row">
                                                 <div class="col-md-3">
                                                     <label>Course Image</label>
-                                                    <input type="file" name="course_image" class="form-control" accept="image/*" required>
-                                                    <small class="text-muted">Upload JPG, PNG, GIF, or WebP (max 5MB)</small>
+                                                    <input type="file" name="course_image" class="form-control"
+                                                        accept="image/*" required>
+                                                    <small class="text-muted">Upload JPG, PNG, GIF, or WebP (max
+                                                        5MB)</small>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <label>Tab</label>
-                                                    <input type="text" name="tab" class="form-control" placeholder="e.g., MCA Entrance" required>
+                                                    <input type="text" name="tab" class="form-control"
+                                                        placeholder="e.g., MCA Entrance" required>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <label>Category</label>
-                                                    <input type="text" name="category" class="form-control" placeholder="e.g., Data Analytics" required>
+                                                    <input type="text" name="category" class="form-control"
+                                                        placeholder="e.g., Data Analytics" required>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <label>Title</label>
@@ -252,25 +256,29 @@ try {
                                             <div class="row mt-3">
                                                 <div class="col-md-9">
                                                     <label>Description</label>
-                                                    <textarea name="description" class="form-control" rows="3"></textarea>
+                                                    <textarea name="description" class="form-control"
+                                                        rows="3"></textarea>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <label>Status</label>
                                                     <div class="form-check mt-4">
-                                                        <input type="checkbox" name="is_active" class="form-check-input" id="is_active" checked>
+                                                        <input type="checkbox" name="is_active" class="form-check-input"
+                                                            id="is_active" checked>
                                                         <label class="form-check-label" for="is_active">Active</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row mt-3">
                                                 <div class="col-md-12">
-                                                    <button type="submit" name="add_course" class="btn btn-success">Add Course</button>
+                                                    <button type="submit" name="add_course" class="btn btn-success">Add
+                                                        Course</button>
                                                 </div>
                                             </div>
                                         </form>
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                                            <table class="table table-bordered text-nowrap border-bottom"
+                                                id="basic-datatable">
                                                 <thead>
                                                     <tr>
                                                         <th class="wd-5p border-bottom-0">ID</th>
@@ -288,32 +296,40 @@ try {
                                                     if (!empty($courses)):
                                                         foreach ($courses as $course):
                                                     ?>
-                                                            <tr>
-                                                                <td><?php echo htmlspecialchars($course['id']); ?></td>
-                                                                <td>
-                                                                    <img src="../<?php echo htmlspecialchars($course['image_path']); ?>" alt="<?php echo htmlspecialchars($course['title']); ?>" style="width: 60px; height: 45px; object-fit: cover; border-radius: 5px;">
-                                                                </td>
-                                                                <td><?php echo htmlspecialchars($course['tab']); ?></td>
-                                                                <td><?php echo htmlspecialchars($course['category']); ?></td>
-                                                                <td><?php echo htmlspecialchars($course['title']); ?></td>
-                                                                <td><?php echo htmlspecialchars(substr($course['description'], 0, 50)) . (strlen($course['description']) > 50 ? '...' : ''); ?></td>
-                                                                <td>
-                                                                    <span class=" <?php echo $course['is_active'] ? 'badge-success' : 'badge-danger'; ?>">
-                                                                        <?php echo $course['is_active'] ? 'Active' : 'Inactive'; ?>
-                                                                    </span>
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#" class="btn btn-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#editModal" onclick="editCourse(<?php echo $course['id']; ?>, '<?php echo addslashes(htmlspecialchars($course['image_path'])); ?>', '<?php echo addslashes(htmlspecialchars($course['tab'])); ?>', '<?php echo addslashes(htmlspecialchars($course['category'])); ?>', '<?php echo addslashes(htmlspecialchars($course['title'])); ?>', '<?php echo addslashes(htmlspecialchars($course['description'])); ?>', <?php echo $course['is_active']; ?>)">Edit</a>
-                                                                    <a href="?delete=<?php echo $course['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</a>
-                                                                </td>
-                                                            </tr>
-                                                        <?php
+                                                    <tr>
+                                                        <td><?php echo htmlspecialchars($course['id']); ?></td>
+                                                        <td>
+                                                            <img src="../<?php echo htmlspecialchars($course['image_path']); ?>"
+                                                                alt="<?php echo htmlspecialchars($course['title']); ?>"
+                                                                style="width: 60px; height: 45px; object-fit: cover; border-radius: 5px;">
+                                                        </td>
+                                                        <td><?php echo htmlspecialchars($course['tab']); ?></td>
+                                                        <td><?php echo htmlspecialchars($course['category']); ?></td>
+                                                        <td><?php echo htmlspecialchars($course['title']); ?></td>
+                                                        <td><?php echo htmlspecialchars(substr($course['description'], 0, 50)) . (strlen($course['description']) > 50 ? '...' : ''); ?>
+                                                        </td>
+                                                        <td>
+                                                            <span
+                                                                class=" <?php echo $course['is_active'] ? 'badge-success' : 'badge-danger'; ?>">
+                                                                <?php echo $course['is_active'] ? 'Active' : 'Inactive'; ?>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-primary btn-sm me-1"
+                                                                data-bs-toggle="modal" data-bs-target="#editModal"
+                                                                onclick="editCourse(<?php echo $course['id']; ?>, '<?php echo addslashes(htmlspecialchars($course['image_path'])); ?>', '<?php echo addslashes(htmlspecialchars($course['tab'])); ?>', '<?php echo addslashes(htmlspecialchars($course['category'])); ?>', '<?php echo addslashes(htmlspecialchars($course['title'])); ?>', '<?php echo addslashes(htmlspecialchars($course['description'])); ?>', <?php echo $course['is_active']; ?>)">Edit</a>
+                                                            <a href="?delete=<?php echo $course['id']; ?>"
+                                                                class="btn btn-danger btn-sm"
+                                                                onclick="return confirm('Are you sure?')">Delete</a>
+                                                        </td>
+                                                    </tr>
+                                                    <?php
                                                         endforeach;
                                                     else:
                                                         ?>
-                                                        <tr>
-                                                            <td colspan="8" class="text-center">No courses found.</td>
-                                                        </tr>
+                                                    <tr>
+                                                        <td colspan="8" class="text-center">No courses found.</td>
+                                                    </tr>
                                                     <?php endif; ?>
                                                 </tbody>
                                             </table>
@@ -343,20 +359,24 @@ try {
                             <input type="hidden" name="edit_course_id" id="edit_course_id">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="edit_course_image" class="form-label">Course Image (Optional - leave empty to keep current)</label>
-                                    <input type="file" name="edit_course_image" id="edit_course_image" class="form-control" accept="image/*">
+                                    <label for="edit_course_image" class="form-label">Course Image (Optional - leave
+                                        empty to keep current)</label>
+                                    <input type="file" name="edit_course_image" id="edit_course_image"
+                                        class="form-control" accept="image/*">
                                     <small class="text-muted">Upload JPG, PNG, GIF, or WebP (max 5MB)</small>
                                     <div id="current_image_preview" class="mt-2"></div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="edit_tab" class="form-label">Tab</label>
-                                    <input type="text" name="edit_tab" id="edit_tab" class="form-control" placeholder="e.g., MCA Entrance" required>
+                                    <input type="text" name="edit_tab" id="edit_tab" class="form-control"
+                                        placeholder="e.g., MCA Entrance" required>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6">
                                     <label for="edit_category" class="form-label">Category</label>
-                                    <input type="text" name="edit_category" id="edit_category" class="form-control" required>
+                                    <input type="text" name="edit_category" id="edit_category" class="form-control"
+                                        required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="edit_title" class="form-label">Title</label>
@@ -366,12 +386,14 @@ try {
                             <div class="row mt-3">
                                 <div class="col-md-9">
                                     <label for="edit_description" class="form-label">Description</label>
-                                    <textarea name="edit_description" id="edit_description" class="form-control" rows="3"></textarea>
+                                    <textarea name="edit_description" id="edit_description" class="form-control"
+                                        rows="3"></textarea>
                                 </div>
                                 <div class="col-md-3">
                                     <label for="edit_is_active" class="form-label">Active</label>
                                     <div class="form-check mt-4">
-                                        <input type="checkbox" name="edit_is_active" id="edit_is_active" class="form-check-input">
+                                        <input type="checkbox" name="edit_is_active" id="edit_is_active"
+                                            class="form-check-input">
                                         <label class="form-check-label" for="edit_is_active">Active</label>
                                     </div>
                                 </div>
@@ -387,7 +409,7 @@ try {
         </div>
 
         <!-- FOOTER -->
-       <?php include 'assets/footer.php'; ?>
+        <?php include 'assets/footer.php'; ?>
         <!-- FOOTER CLOSED -->
     </div>
 
@@ -452,22 +474,23 @@ try {
     <script src="assets/switcher/js/switcher.js"></script>
 
     <script>
-        function editCourse(id, imagePath, tab, category, title, description, isActive) {
-            document.getElementById('edit_course_id').value = id;
-            document.getElementById('edit_tab').value = tab;
-            document.getElementById('edit_category').value = category;
-            document.getElementById('edit_title').value = title;
-            document.getElementById('edit_description').value = description;
-            document.getElementById('edit_is_active').checked = isActive == 1;
-            
-            // Show current image preview
-            const previewDiv = document.getElementById('current_image_preview');
-            if (imagePath) {
-                previewDiv.innerHTML = '<label class="form-label">Current Image:</label><br><img src="../' + imagePath + '" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px; border: 1px solid #ddd;">';
-            } else {
-                previewDiv.innerHTML = '';
-            }
+    function editCourse(id, imagePath, tab, category, title, description, isActive) {
+        document.getElementById('edit_course_id').value = id;
+        document.getElementById('edit_tab').value = tab;
+        document.getElementById('edit_category').value = category;
+        document.getElementById('edit_title').value = title;
+        document.getElementById('edit_description').value = description;
+        document.getElementById('edit_is_active').checked = isActive == 1;
+
+        // Show current image preview
+        const previewDiv = document.getElementById('current_image_preview');
+        if (imagePath) {
+            previewDiv.innerHTML = '<label class="form-label">Current Image:</label><br><img src="../' + imagePath +
+                '" style="width: 100px; height: 75px; object-fit: cover; border-radius: 5px; border: 1px solid #ddd;">';
+        } else {
+            previewDiv.innerHTML = '';
         }
+    }
     </script>
 
 </body>

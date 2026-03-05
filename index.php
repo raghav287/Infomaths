@@ -1884,7 +1884,7 @@ try {
                          </div>
 
                          <div class="p-4">
-                             <h5 class="fw-bold mb-2 text-dark">PU / Clerical</h5>
+                             <h5 class="fw-bold mb-2 text-dark">PO/Clerical/SSC</h5>
                              <!-- <p class="small mb-3">Govt. Exams</p> -->
 
                              <div class="d-flex justify-content-center gap-2">
@@ -1943,7 +1943,7 @@ try {
                          </div>
 
                          <div class="p-4">
-                             <h5 class="fw-bold mb-2 text-dark">Internship Training</h5>
+                             <h5 class="fw-bold mb-2 text-dark">Internship/Skill Dev</h5>
                              <!-- <p class="small mb-3">Internship Training </p> -->
 
                              <div class="d-flex justify-content-center gap-2">
@@ -2200,14 +2200,14 @@ try {
                              <div class="td_section_heading td_style_1 td_mb_30">
                                  <p
                                      class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">
-                                     About Info Maths
+                                     About InfoMaths
                                  </p>
                                  <h2 class="td_section_title td_fs_48 mb-0" style="color:#09226c">
                                      Welcome to INFOMATHS
                                  </h2>
                                  <p class="td_section_subtitle td_fs_18 mb-3">
                                      Empowering Aspirants since 1999 <br>
-                                     InfoMaths is a premier coaching institute dedicated to Student excellence.
+                                     Infomaths is a Premier Coaching I nstitute dedicated to Student excellence.
                                      We
                                      blend expert theoretical knowledge with practical problem-solving to help
                                      students
