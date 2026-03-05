@@ -21,7 +21,7 @@ function getCategoryName($section_name) {
         'bank_po_result' => 'Bank PO Results',
         'campus_placement' => 'Campus Placement',
         'college_results' => 'College Results',
-        'iit_jam_gallery' => 'IIT JAM Gallery'
+        // 'iit_jam_gallery' => 'IIT JAM Gallery'
     ];
     return $map[$section_name] ?? $section_name;
 }
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['upload_image'])) {
     $alt_text = trim($_POST['alt_text']);
     $display_order = (int)$_POST['display_order'];
 
-    $valid_sections = ['mca_results', 'pu_results', 'campus_placement', 'college_results', 'iit_jam_gallery'];
+    $valid_sections = ['mca_results', 'bank_po_result', 'campus_placement', 'college_results'];
 
     if (empty($section_name) || !in_array($section_name, $valid_sections)) {
         $message = 'Please select a valid section.';
@@ -278,7 +278,7 @@ try {
                                                         <option value="bank_po_result">Bank PO Results</option>
                                                         <option value="campus_placement">Campus Placement</option>
                                                         <option value="college_results">College Results</option>
-                                                        <option value="iit_jam_gallery">IIT JAM Gallery</option>
+                                                        <!-- <option value="iit_jam_gallery">IIT JAM Gallery</option> -->
                                                     </select>
                                                 </div>
 
