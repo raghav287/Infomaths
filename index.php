@@ -1825,7 +1825,7 @@ try {
              </h2>
 
              <p class="text-center mb-5" style="font-size:1.2rem;color:#7f8c8d;max-width:600px;margin:0 auto;">
-                 Prepare for MCA, PU, IIT-JAM, Campus Placement, BBA and more.
+                 Prepare for MCA, PO, IIT-JAM, Campus Placement, BBA and more.
                  Achieve your career goals and make your parents proud.
              </p>
              <style>
@@ -2207,7 +2207,7 @@ try {
                                  </h2>
                                  <p class="td_section_subtitle td_fs_18 mb-3">
                                      Empowering Aspirants since 1999 <br>
-                                     Infomaths is a Premier Coaching I nstitute dedicated to Student excellence.
+                                     Infomaths is a Premier Coaching Institute dedicated to Student excellence.
                                      We
                                      blend expert theoretical knowledge with practical problem-solving to help
                                      students
@@ -2370,13 +2370,12 @@ try {
 
              <div class="td_section_heading text-center">
                  <h2 class="td_section_title td_fs_48 mb-4">
-                     Explore Our Online Learning Programs @coursedu APP
+                     CoursEdu App: Explore Our Online Learning Programs
+
                  </h2>
-                 <p
-                     class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">
-                     Enhance your MCA entrance preparation with expert-led online courses covering Maths,
-                     Aptitude, Computers, and English. Learn anytime, anywhere 24x7 with interactive sessions
-                     and complete study material. On our android and IOS App of Infomaths -
+                 <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10  td_accent_color">
+                     Learn Anytime Anywhere 24x7
+
                  </p>
              </div>
 
@@ -2389,7 +2388,7 @@ try {
                      <div class="td_post td_style_1 h-100">
                          <img src="assets/img/home_1/post_1.jpg" class="img-fluid">
                          <div class="td_post_info">
-                             <h2 class="td_post_title td_fs_24">Banking</h2>
+                             <h2 class="td_post_title td_fs_24">MCA</h2>
                              <p class="td_post_subtitle">Learn about the evolving education system.</p>
                              <a href="#" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium mt-3">
                                  <span class="td_btn_in td_accent_color">
@@ -2404,7 +2403,7 @@ try {
                      <div class="td_post td_style_1 h-100">
                          <img src="assets/img/home_1/post_2.jpg" class="img-fluid">
                          <div class="td_post_info">
-                             <h2 class="td_post_title td_fs_24">MCA</h2>
+                             <h2 class="td_post_title td_fs_24">Banking</h2>
                              <p class="td_post_subtitle">Understand the new policy structure.</p>
                              <a href="#" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium mt-3">
                                  <span class="td_btn_in td_accent_color">
@@ -2419,7 +2418,7 @@ try {
                      <div class="td_post td_style_1 h-100">
                          <img src="assets/img/home_1/post_3.jpg" class="img-fluid">
                          <div class="td_post_info">
-                             <h2 class="td_post_title td_fs_24">BCA</h2>
+                             <h2 class="td_post_title td_fs_24">BCA/B.SC</h2>
                              <p class="td_post_subtitle">A practical guide for students.</p>
                              <a href="#" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium mt-3">
                                  <span class="td_btn_in td_accent_color">
@@ -2636,7 +2635,7 @@ try {
                  <?php
             $sections = [
                 ['slug' => 'mca_results', 'title' => 'MCA Results'],
-                ['slug' => 'pu_results', 'title' => 'PU Results'],
+                ['slug' => 'bank_po_result', 'title' => 'Bank PO Results'],
                 ['slug' => 'campus_placement', 'title' => 'Campus Placement'],
                 ['slug' => 'college_results', 'title' => 'College Results']
             ];
@@ -4892,7 +4891,7 @@ try {
                              Get in Touch
                          </h2>
 
-                         <div class="td_footer_text_widget td_fs_18">
+                         <div class="td_footer_widget_menu td_fs_18">
 
                              <a href="https://maps.app.goo.gl/AoR8fQecc1aEBvTh7" class="m-0">
                                  <i class="fa-solid fa-location-dot" style="margin-right:8px;"></i>
