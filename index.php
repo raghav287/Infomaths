@@ -1701,7 +1701,7 @@ try {
                              <div class="col-lg-6 d-flex align-items-center justify-content-center"
                                  style="min-height: 700px;">
                                  <div class="td_hero_text wow fadeInRight" data-wow-duration="0.9s"
-                                     data-wow-delay="0.35s" style="width:100%; text-align:left;">
+                                     data-wow-delay="0.35s" style="width:90%; text-align:left;">
                                      <h1 class="td_hero_title td_white_color td_mb_12" style="line-height:0.2em;">
                                          <span class="td_fs_24"><?php echo htmlspecialchars($slide['title']); ?></span>
                                      </h1>
@@ -1730,7 +1730,7 @@ try {
                              <div class="col-lg-6">
                                  <div class="hero-contact-form wow fadeInLeft" data-wow-duration="0.9s"
                                      data-wow-delay="0.4s"
-                                     style="background: rgba(255, 255, 255, 0.95); padding: 1.2rem; border-radius: 12px; box-shadow: 0 12px 25px rgba(0,0,0,0.12); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); max-width: 400px; margin-left: auto;">
+                                     style="background: rgba(255, 255, 255, 0.95); padding: 1.2rem; border-radius: 12px; box-shadow: 0 12px 25px rgba(0,0,0,0.12); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); max-width: 400px; margin-left: 240px;">
                                      <form action="#" method="POST" class="hero-contact-form-inner unified-contact-form"
                                          id="heroContactForm<?php echo $index + 1; ?>">
                                          <div class="form-row" style="display: flex; gap: 10px; margin-bottom: 0.6rem;">
@@ -1825,7 +1825,7 @@ try {
              </h2>
 
              <p class="text-center mb-5" style="font-size:1.2rem;color:#7f8c8d;max-width:600px;margin:0 auto;">
-                 Prepare for MCA, PO, IIT-JAM, Campus Placement, BBA and more.
+                 Prepare for MCA, PO/Clerical/SSC, IIT-JAM, Campus Placement, BCA-B.Sc. and more.
                  Achieve your career goals and make your parents proud.
              </p>
              <style>
@@ -1939,7 +1939,7 @@ try {
                      <div class="category-card-professional text-center bg-white border rounded shadow-sm h-100">
 
                          <div class="card-image">
-                             <img src="assets/img/home_1/5.jpeg" alt="BCA - BSC">
+                             <img src="assets/img/home_1/5.jpeg" alt="BCA - B.Sc.">
                          </div>
 
                          <div class="p-4">
@@ -1960,11 +1960,11 @@ try {
                      <div class="category-card-professional text-center bg-white border rounded shadow-sm h-100">
 
                          <div class="card-image">
-                             <img src="assets/img/home_1/6.jpeg" alt="BCA - BSC">
+                             <img src="assets/img/home_1/6.jpeg" alt="BCA - B.Sc.">
                          </div>
 
                          <div class="p-4">
-                             <h5 class="fw-bold mb-2 text-dark">BCA - BSC</h5>
+                             <h5 class="fw-bold mb-2 text-dark">BCA - B.Sc.</h5>
                              <!-- <p class="small mb-3">College Classes</p> -->
 
                              <div class="d-flex justify-content-center gap-2">
@@ -2096,13 +2096,13 @@ try {
              </div>
          </div>
      </div> -->
-     <!-- Card 5: BCA - BSC -->
+     <!-- Card 5: BCA - B.Sc. -->
      <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-2">
          <div class="category-card-professional text-center p-4 bg-white border rounded shadow-sm h-100">
              <div class="card-icon mb-3">
-                 <img src="assets/img/icons/bca.png" alt="BCA - BSC" style="height:50px;width:50px;object-fit:contain;">
+                 <img src="assets/img/icons/bca.png" alt="BCA - B.Sc." style="height:50px;width:50px;object-fit:contain;">
              </div>
-             <h5 class="fw-bold mb-2 text-dark">BCA - BSC</h5>
+             <h5 class="fw-bold mb-2 text-dark">BCA - B.Sc.</h5>
              <p class=" small mb-3"> College Classes</p>
              <div class="d-flex justify-content-center gap-2">
                  <a href="offline.php" class="btn btn-outline-primary btn-sm">Offline</a>
@@ -2403,7 +2403,7 @@ try {
                      <div class="td_post td_style_1 h-100">
                          <img src="assets/img/home_1/post_2.jpg" class="img-fluid">
                          <div class="td_post_info">
-                             <h2 class="td_post_title td_fs_24">Banking</h2>
+                             <h2 class="td_post_title td_fs_24">Banking/Goverment Job/SSC</h2>
                              <p class="td_post_subtitle">Understand the new policy structure.</p>
                              <a href="#" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium mt-3">
                                  <span class="td_btn_in td_accent_color">
@@ -2418,7 +2418,7 @@ try {
                      <div class="td_post td_style_1 h-100">
                          <img src="assets/img/home_1/post_3.jpg" class="img-fluid">
                          <div class="td_post_info">
-                             <h2 class="td_post_title td_fs_24">BCA/B.SC</h2>
+                             <h2 class="td_post_title td_fs_24">BCA/B.Sc.</h2>
                              <p class="td_post_subtitle">A practical guide for students.</p>
                              <a href="#" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium mt-3">
                                  <span class="td_btn_in td_accent_color">
@@ -2432,7 +2432,7 @@ try {
              </div>
 
              <!-- ===== SECOND ROW (2 CARDS CENTERED) ===== -->
-             <div class="row justify-content-center td_gap_y_30 mt-4">
+             <div class="row  td_gap_y_30 mt-4">
 
                  <div class="col-lg-4 col-md-6">
                      <div class="td_post td_style_1 h-100">
@@ -2455,6 +2455,21 @@ try {
                          <div class="td_post_info">
                              <h2 class="td_post_title td_fs_24">Campus Placement</h2>
                              <p class="td_post_subtitle">Explore digital education growth.</p>
+                             <a href="#" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium mt-3">
+                                 <span class="td_btn_in td_accent_color">
+                                     <span>Other Courses</span>
+                                 </span>
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6">
+                     <div class="td_post td_style_1 h-100">
+                         <img src="assets/img/home_1/post_4.jpg" class="img-fluid">
+                         <div class="td_post_info">
+                             <h2 class="td_post_title td_fs_24">IIT JAM MATHS</h2>
+                             <p class="td_post_subtitle">Discover how online platforms help.</p>
                              <a href="#" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium mt-3">
                                  <span class="td_btn_in td_accent_color">
                                      <span>Other Courses</span>
@@ -2637,7 +2652,8 @@ try {
                 ['slug' => 'mca_results', 'title' => 'MCA Results'],
                 ['slug' => 'bank_po_result', 'title' => 'Bank PO Results'],
                 ['slug' => 'campus_placement', 'title' => 'Campus Placement'],
-                ['slug' => 'college_results', 'title' => 'College Results']
+                ['slug' => 'college_results', 'title' => 'College Results'],
+                ['slug' => 'iit_jam_maths', 'title' => 'IIT JAM Maths Results']
             ];
 
             foreach ($sections as $sec):
@@ -3208,7 +3224,9 @@ try {
                      <p class="infomaths-info-desc mb-3">
                          Infomaths, a leader in competitive exam coaching, has been guiding students to success in
                          MCA,
-                         PU, IIT-JAM, Campus Placement, BBA, and more for over two decades. Our expert faculty,
+                         PO/Clerical/SSC, IIT-JAM, Campus Placement, BCA-B.Sc., and more for over two decades. Our
+                         expert
+                         faculty,
                          innovative teaching methods, and commitment to excellence have helped thousands of students
                          achieve their academic and career goals.
                      </p>
@@ -3339,8 +3357,7 @@ try {
          <div class="container" style="max-width:1300px;margin:0 auto;">
              <h2 class="cuet-books-title"
                  style="font-size:2.8rem;font-weight:700;text-align:center;margin-bottom:0.5rem;color:#222;">
-                 Our Publications
-                 </span>
+                 Our Publications/Printed/EBooks/Video Tutorials</span>
              </h2>
              <p class="cuet-books-subtitle"
                  style="text-align:center;font-size:1.25rem;color:#4a4a4a;margin-bottom:2.5rem;">
@@ -4846,7 +4863,7 @@ try {
                                  <a href="#">BCA Subject Classes</a>
                              </li>
                              <li>
-                                 <a href="#">BSC Subject Classes</a>
+                                 <a href="#">B.Sc. Subject Classes</a>
                              </li>
                              <li>
                                  <a href="#">Campus Placement</a>
@@ -4941,11 +4958,38 @@ try {
      </footer>
      <!-- End Footer Section -->
      <!-- WhatsApp Floating Icon -->
+
+     <button id="scrollTopBtn" title="Go to top">↑</button>
      <a href="https://wa.me/919872124534" target="_blank" id="whatsapp-float"
          style="position:fixed;right:24px;bottom:24px;z-index:9999;background:#25d366;color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,0.18);text-decoration:none; animation: whatsapp-bounce 1.5s infinite;">
          <img src="assets/img/whatsapp.png" alt="WhatsApp" style="display:block;" />
      </a>
      <style>
+     #scrollTopBtn {
+         position: fixed;
+         bottom: 95px;
+         right: 24px;
+         z-index: 9999;
+         display: none;
+         align-items: center;
+         justify-content: center;
+         background: #b71c1c;
+         color: #fff;
+         border: none;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         font-size: 20px;
+         cursor: pointer;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+         transition: all 0.3s ease;
+     }
+
+     #scrollTopBtn:hover {
+         background: #b71c1c;
+         transform: translateY(-3px);
+     }
+
      @keyframes whatsapp-bounce {
 
          0%,
@@ -4991,6 +5035,31 @@ try {
      <script src="assets/js/main.js"></script>
 
      <!-- Header Transparency Script -->
+
+     <script>
+     document.addEventListener("DOMContentLoaded", function() {
+
+         const scrollBtn = document.getElementById("scrollTopBtn");
+
+         if (!scrollBtn) return;
+
+         window.addEventListener("scroll", function() {
+             if (document.documentElement.scrollTop > 300 || document.body.scrollTop > 300) {
+                 scrollBtn.style.display = "flex";
+             } else {
+                 scrollBtn.style.display = "none";
+             }
+         });
+
+         scrollBtn.addEventListener("click", function() {
+             window.scrollTo({
+                 top: 0,
+                 behavior: "smooth"
+             });
+         });
+
+     });
+     </script>
      <script>
      // Placement Records Slider JavaScript
      $(document).ready(function() {

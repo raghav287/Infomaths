@@ -1,12 +1,31 @@
 // Initialize Swiper for hero section
 document.addEventListener('DOMContentLoaded', function() {
   if (typeof Swiper !== 'undefined') {
+
     var heroSwiper = new Swiper('.hero-swiper', {
       loop: true,
-      autoplay: { delay: 5000 },
-      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-      pagination: { el: '.swiper-pagination', clickable: true }
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: true   // stops autoplay on interaction
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      }
     });
+
+    // Stop slider when user focuses on form fields
+    document.querySelectorAll('.hero-contact-form input, .hero-contact-form textarea, .hero-contact-form select')
+      .forEach(function(el) {
+        el.addEventListener('focus', function() {
+          heroSwiper.autoplay.stop();
+        });
+      });
+
   }
 });
 (function ($) {
